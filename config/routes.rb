@@ -43,7 +43,7 @@ Rails.application.routes.draw do
 
   # READ
   get('/roles', { :controller => 'roles', :action => 'index' })
-  get('/roles/:id', { :controller => 'roles', :action => 'show' })
+  get('/edit_form/:id', { :controller => 'roles', :action => 'edit_form' })
 
   # UPDATE
   get('/roles/id/edit_form', { :controller => 'roles', :action => 'edit_form' })
